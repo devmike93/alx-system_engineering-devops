@@ -4,10 +4,10 @@
 # Distribute requests using a roundrobin algorithm
 # Make sure that HAProxy can be managed via an init script
 # Install and configure HAproxy on my lb-01 server.
-sudo apt-get -y update
-sudo apt-get install -y --no-install-recommends software-properties-common
-sudo add-apt-repository -y ppa:vbernat/haproxy-2.9
-sudo apt-get -y install haproxy=2.9.\*
+apt-get -y update
+apt-get install -y --no-install-recommends software-properties-common
+add-apt-repository -y ppa:vbernat/haproxy-2.9
+apt-get -y install haproxy=2.9.\*
 
 # edit config file
 server_config=\
